@@ -1,0 +1,25 @@
+{
+    "help.customers": {
+      "bsonType": "object",
+      "encryptMetadata": {
+        "algorithm": "AEAD_AES_256_CBC_HMAC_SHA_512-Random",
+        "keyId": [{
+          "$uuid": "3a18c652-0dc5-4453-8c7c-8796ab7b7032"
+        }]
+      },
+      "properties": {
+        "encrypted_first_name": {
+          "encrypt": {
+            "bsonType": "string",
+            "algorithm": "AEAD_AES_256_CBC_HMAC_SHA_512-Deterministic"
+          }
+        },
+        "encrypted_last_name": {
+          "encrypt": {
+            "bsonType": "string",
+            "algorithm": "AEAD_AES_256_CBC_HMAC_SHA_512-Deterministic"
+          }
+        }
+      }
+    }
+}
