@@ -42,6 +42,7 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'mongo', '2.18.1'
 gem 'mongoid', '7.3.5'
 gem 'libmongocrypt-helper'
 gem 'mongoid-client-side-encryption', git: 'https://github.com/shoplineapp/mongoid-client-side-encryption'

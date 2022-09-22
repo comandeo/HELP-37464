@@ -197,6 +197,7 @@ DEPENDENCIES
   jbuilder (~> 2.7)
   libmongocrypt-helper
   listen (~> 3.3)
+  mongo (= 2.18.1)
   mongoid (= 7.3.5)
   mongoid-client-side-encryption!
   rack-mini-profiler (~> 2.0)
