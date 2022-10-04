@@ -1,4 +1,4 @@
-development:
+development: &development
   # Configure available database clients. (required)
   clients:
     # Defines the default client. (required)
@@ -179,6 +179,12 @@ development:
     # (Deprecated) In MongoDB 4.0 and earlier, set whether to create
     # indexes in the background by default. (default: false)
     # background_indexing: false
+
+staging:
+  <<: *development
+
+production:
+  <<: *development
 
 test:
   clients:
